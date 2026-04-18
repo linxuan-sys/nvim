@@ -2,12 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- 全局切换拼写检查开关（任何文件类型都有效）
-vim.keymap.set("n", "<leader>m", function()
-  vim.opt.spell = not vim.opt.spell:get()
-  if vim.opt.spell:get() then
-    print("Spell check enabled")
-  else
-    print("Spell check disabled")
-  end
-end, { desc = "Toggle Spell Check" })
+-- 快速按两次 p 相当于 Esc（插入模式和可视模式）
+vim.keymap.set({ "i", "v" }, "pp", "<Esc>", { noremap = true, silent = true, desc = "Fast pp to Esc" })
+
+-- 普通模式和命令模式下按 \ 保存文件
+vim.keymap.set({ "n", "c" }, "\\", "<cmd>w<cr>", { noremap = true, silent = true, desc = "Save file" })

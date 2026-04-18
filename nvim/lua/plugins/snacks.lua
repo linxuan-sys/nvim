@@ -3,18 +3,84 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
+    picker = {
+      sources = {
+        files = {
+          hidden = true, -- 显示隐藏文件
+        },
+      },
+    },
+
     dashboard = {
       enabled = true,
       preset = {
         header = [[
- ██╗     ██╗███╗   ██╗██╗  ██╗██╗   ██╗ █████╗ ███╗   ██╗
- ██║     ██║████╗  ██║╚██╗██╔╝██║   ██║██╔══██╗████╗  ██║
- ██║     ██║██╔██╗ ██║ ╚███╔╝ ██║   ██║███████║██╔██╗ ██║
- ██║     ██║██║╚██╗██║ ██╔██╗ ██║   ██║██╔══██║██║╚██╗██║
- ███████╗██║██║ ╚████║██╔╝ ██╗╚██████╔╝██║  ██║██║ ╚████║
- ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝
-                                    @临轩linxuan_bilibili 
+███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+                             @临轩linxuan_bilibili
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡴⠶⠶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠉⠻⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏⠀⠀⠀⠀⠀⠀⠀⠀⠹⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡏⠀⢠⣤⣤⡄⢀⣤⣤⣄⠀⠹⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⣿⣿⣿⡿⢸⣿⣿⣿⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣄  ⠀   ⢠⡇⠀⠀⠈⠛⠛⠁⠀⠙⠛⠋⠀⠀⠈⣧⠀⠀⠀ ⡔ ⠀⠀⠀
+⢀⡤⠙⢷⣦   ⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡆⠀⠀⠀⠈⢙⣲⣶⠀
+ ⣴⣾⣿⡋   ⢰⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⠀⠀⠰⢿⣿⠿⠁ 
+ ⠙⠛⠿⠛⠀  ⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣇⠀⠀⠀⠀⠀ ⠀
+⠀⠀⠀⠀⠀⠀⠀⢸⡷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⡆⢻⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠘⠂⢷⡀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣼⠃⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⢻⠀⢂⠀⠀⠀⠀⠻⣆⠀⠀⠀
+⠀⠀⠀⢀⡾⠃⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⠀ ⢸⣿⠀⠀⢸⠀⠘⠂⠀⠀⠀⠀⠈⢳⣄⠀
+⠀⠀⢀⡞⠁⠀⠸⠷⢰⠁⠀⠀⠀⠀⠀⠀⠀  ⢸⣿⠀⠈⡄⠀⠀⣤⠄⠀⢀⣠⠏⢹⡆
+⠀⣴⡟⣀⠀⠀⠷⢀⠃⠀⠀⠀⣤⡀⠀⠀⠀⢸⣿⠀⠀⠀⠀⡇⠀⠀⢰⡟⠋⠁⠀⣠⡞⠀
+ ⠻⣧⣿⣧⣜⠃⡘⠀⠀⠀⢠⣿⠇⠀⠀⠀ ⢸⣿⠀⠀⠀⠃⠀⠀⢸⣇⣀⣀⡼⠋$⠀
+⠀⠀⠘⢿⣿⡏⠐⢁⠄⠀⠀⠸⡷⠀⠀⠀⠀ ⢸⣿⠀⠀⠀⠀⠀⠀⠀⠘⢻⣿⡇⠀⠀⠀
+$⠀⢠⣿⠋⠀⠀⡌⠀⠀⣸⣿⠄⠀⠀⠀⠀⠸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⡇⠀⠀⠀
+⠀⠀⡌⠀⠺⠃⠀⠀⠀⢀⣿⠏⠀⠀⠀⠀⠀⠿⠆  ⠀⠀⠀⣆⠀⠀⢰⡎⣿⡇⠀$⠀
+⠀⠀⢦⣄⠀⠀⠀⠀⠀⣾⠟⠀⠀$⠀⠀⠺⠇⠀⠀⠀⠀⢹⠀⠀⠀⠀⢸⣷⠻⣷⠀⠀⠀
+⠀⠀⠀⠉⠲⠶⣤⣤⣶⠆⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀$⠀⠸⡄⠀⠀⠀⢸⣿⣶⣿⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⠛⣃⠀⠀⠀⣀⡀⠀⣿⣧⣄⡀⠀⠀⠀⠀⡇⠀⠀⠀⢸⣿⠉⠉⠀⠀⠀
+⠀⠀$⠀⠀⠀⣿⠀⠈⠉⠉⠉⠉⠉⠁⠉⠉⠉⠉⢳⣤⡄⠀⠃⠀⠀⠀⠸⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢻⣄⠀⠀⠀⠀⠀⣠⣄⠀⠀⠀⠀⠀⠀⢈⣡⣤⡀⠀⠀⠀⣿⠀⠀⠀⠀⠀
+⠀⠀⠀$⠀⠀⠀⠉⠉⠳⠶⠶⠞⠁⠈⢧⡀⠀⠀⣠⡴⠋⠀⠈⠹⢧⣄⣠⠏⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠒⠛⠁⠀⠀⠀⠀⠀⠀⠉⠁⠀⠀$⠀⠀⠀
+          $                       
+                    $             
+                                  
+Don't touch the ghost or it'll haunt you
 ]],
+      },
+      sections = {
+        {
+          --icon = " ",
+          key = "e",
+          --desc = "Explorer",
+          action = ":lua Snacks.explorer({ cwd = LazyVim.root() })",
+        },
+        { section = "header" },
+        { pane = 2, icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
+        { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
+        {
+          pane = 2,
+          icon = " ",
+          title = "Git Status",
+          section = "terminal",
+          enabled = function()
+            return require("snacks.git").get_root() ~= nil
+          end,
+          cmd = "git status --short --branch --renames",
+          height = 5,
+          padding = 1,
+          ttl = 5 * 60,
+          indent = 3,
+        },
+        { pane = 2, section = "startup" },
       },
     },
     image = {
@@ -63,12 +129,6 @@ return {
       enabled = true,
       win = { style = "terminal" },
     },
-    zen = {
-      enabled = true,
-    },
-    dim = {
-      enabled = true,
-    },
   },
   keys = {
     -- 空格 + t 切换终端（支持数字前缀切换不同实例）
@@ -80,29 +140,28 @@ return {
       end,
       desc = "Terminal",
     },
-    -- Leader+z 切换 Zen 专注模式
-    {
-      "<leader>z",
-      function()
-        Snacks.zen()
-      end,
-      desc = "Toggle Zen Mode",
-    },
-    -- Leader+D 切换 Dim 模式（默认关闭，手动开启）
-    {
-      "<leader>D",
-      function()
-        if vim.g.snacks_dim_enabled then
-          Snacks.dim.disable()
-          vim.g.snacks_dim_enabled = false
-          print("Dim disabled")
-        else
-          Snacks.dim.enable()
-          vim.g.snacks_dim_enabled = true
-          print("Dim enabled")
-        end
-      end,
-      desc = "Toggle Dim",
-    },
   },
+  -- 设置 Dashboard 自定义颜色
+  config = function(_, opts)
+    -- 先初始化 snacks
+    require("snacks").setup(opts)
+
+    -- Dashboard 颜色设置
+    vim.api.nvim_set_hl(0, "SnacksDashboardHeader", {
+      fg = "#e9edf8",
+      bold = true,
+    })
+    vim.api.nvim_set_hl(0, "SnacksDashboardIcon", {
+      fg = "#8EB8F2",
+      bold = true,
+    })
+    vim.api.nvim_set_hl(0, "SnacksDashboardDesc", {
+      fg = "#d7c6ff",
+      bold = true,
+    })
+    vim.api.nvim_set_hl(0, "SnacksDashboardKey", {
+      fg = "#fe9550",
+      bold = true,
+    })
+  end,
 }
