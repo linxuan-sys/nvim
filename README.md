@@ -13,7 +13,7 @@ Installed plugins: 49
 ## 1. Features
 
 1. **Few hand-written plugin specs**: most capabilities come from LazyVim's built-in
-   presets selected via `:LazyExtras` (see `lazyvim.json`). Only 7 files are customized.
+   presets selected via `:LazyExtras` (see `lazyvim.json`). Only 6 files are customized.
 2. **Python uses basedpyright**; inlay hints are disabled by default (toggle with `<leader>uh`).
 3. **Annoying defaults turned off**: no automatic comment continuation, no spell check,
    no LSP progress popups.
@@ -60,7 +60,7 @@ Config: `lazyvim.json`
 |---|---|
 | `catppuccin` | Active colorscheme (mocha) |
 | `tokyonight.nvim` | Fallback colorscheme |
-| `bufferline.nvim` | Top buffer tabline, set to always show |
+| `bufferline.nvim` | Top buffer tabline |
 | `lualine.nvim` | Statusline |
 | `mini.icons` | Filetype icons |
 | `noice.nvim` | Rewrites cmdline / messages / notifications (LSP progress popups disabled) |
@@ -135,7 +135,7 @@ Config: `lazyvim.json`
 | `typst-preview.nvim` | Typst: live browser preview |
 | `markdown-preview.nvim` | Markdown: browser preview |
 
-## 4. Local Customization (7 files)
+## 4. Local Customization (6 files)
 
 | File | What it does |
 |---|---|
@@ -154,7 +154,6 @@ Config: `lazyvim.json`
 | `lua/plugins/snacks.lua` | Dashboard (ASCII art header + four panes: keymaps / recent files / projects / git status), **the ASCII portrait is Itachi Uchiha (宇智波鼬)**; picker shows hidden files; terminal; image & PDF preview; `<leader>t` for multiple terminal instances |
 | `lua/plugins/lsp.lua` | Inlay hints disabled by default |
 | `lua/plugins/noice.lua` | LSP progress notifications disabled |
-| `lua/plugins/bufferline.lua` | Bufferline always visible |
 | `lua/plugins/catppuccin.lua` | Uses catppuccin's own `load()` instead of the built-in theme name |
 | `lua/plugins/example.lua` | LazyVim template; first line is `if true then return {} end` — loads nothing, safe to delete |
 
@@ -297,7 +296,7 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 |---|---|
 | `catppuccin` | **当前配色**（mocha 系） |
 | `tokyonight.nvim` | 备用配色（启动兜底） |
-| `bufferline.nvim` | 顶部 buffer 标签栏，设为常显 |
+| `bufferline.nvim` | 顶部 buffer 标签栏 |
 | `lualine.nvim` | 底部状态栏 |
 | `mini.icons` | 文件类型图标 |
 | `noice.nvim` | 重写命令行 / 消息 / 通知 UI，已关掉 LSP 进度弹窗 |
@@ -372,7 +371,7 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 | `typst-preview.nvim` | Typst：浏览器实时预览 |
 | `markdown-preview.nvim` | Markdown：浏览器预览 |
 
-## 四、本机自定义部分（7 个文件）
+## 四、本机自定义部分（6 个文件）
 
 | 文件 | 干了什么 |
 |---|---|
@@ -391,7 +390,6 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 | `lua/plugins/snacks.lua` | 首页 Dashboard（ASCII 标题 + 快捷键 / 最近文件 / 项目 / Git 状态四栏），**其中的 ASCII 人物头像是宇智波鼬**；文件选择器显示隐藏文件；终端；图片与 PDF 预览；`<leader>t` 多实例终端 |
 | `lua/plugins/lsp.lua` | 默认关闭 inlay hints |
 | `lua/plugins/noice.lua` | 关闭 LSP 进度提示 |
-| `lua/plugins/bufferline.lua` | bufferline 常显 |
 | `lua/plugins/catppuccin.lua` | 用 catppuccin 官方 `load()` 而非内置主题名 |
 | `lua/plugins/example.lua` | LazyVim 模板，首行 `if true then return {} end`，**不加载任何内容**，可删 |
 
