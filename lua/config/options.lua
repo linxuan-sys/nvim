@@ -20,7 +20,7 @@ vim.opt.formatoptions:remove("o")
 vim.opt.whichwrap:append("<,>,h,l")
 
 -- 3. 默认开启自动换行（行太长时自动折到下一行显示）
-vim.opt.wrap = true
+-- vim.opt.wrap = true
 
 -- 光标离上下边框最少1行，改成0就是完全贴边
 vim.opt.scrolloff = 2
