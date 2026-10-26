@@ -78,6 +78,7 @@ Config: `lazyvim.json`
 | `mini.ai` | Enhanced `a` / `i` text objects |
 | `mini.pairs` | Auto-pair brackets and quotes |
 | `grug-far.nvim` | Project-wide search & replace UI |
+| `yazi.nvim` | Yazi file manager inside Neovim (`<leader>y` / `<leader>Y`) |
 | `nvim-treesitter` | Parsing: highlighting, indent, folds |
 | `nvim-treesitter-textobjects` | Jump/select by function, class, parameter |
 | `nvim-ts-autotag` | Auto-close and rename-sync HTML/JSX tags |
@@ -155,6 +156,7 @@ Config: `lazyvim.json`
 | `lua/plugins/lsp.lua` | Inlay hints disabled by default |
 | `lua/plugins/noice.lua` | LSP progress notifications disabled |
 | `lua/plugins/catppuccin.lua` | Uses catppuccin's own `load()` instead of the built-in theme name |
+| `lua/plugins/yazi.lua` | yazi.nvim: `<leader>y` (file dir) / `<leader>Y` (cwd), yellow 󰇥 icon |
 | `lua/plugins/example.lua` | LazyVim template; first line is `if true then return {} end` — loads nothing, safe to delete |
 
 ## 6. Keymap Cheat Sheet
@@ -176,6 +178,7 @@ Config: `lazyvim.json`
 | `<leader>/` | Search text in project |
 | `<leader>sg` / `<leader>sw` | Grep / search word under cursor |
 | `<leader>sr` | Project search & replace (grug-far) |
+| `<leader>y` / `<leader>Y` | Yazi (file dir / cwd) |
 | `s` | flash jump |
 
 ### Git
@@ -314,6 +317,7 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 | `mini.ai` | 增强 `a` / `i` 文本对象（如 `ciq` 改引号内容） |
 | `mini.pairs` | 括号 / 引号自动配对 |
 | `grug-far.nvim` | 项目级搜索替换界面 |
+| `yazi.nvim` | 在 nvim 里唤起 yazi 文件管理器（`<leader>y` / `<leader>Y`） |
 | `nvim-treesitter` | 语法解析，提供高亮 / 缩进 / 折叠 |
 | `nvim-treesitter-textobjects` | 按函数 / 类 / 参数跳转和选择 |
 | `nvim-ts-autotag` | HTML / JSX 标签自动闭合与重命名同步 |
@@ -391,6 +395,7 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 | `lua/plugins/lsp.lua` | 默认关闭 inlay hints |
 | `lua/plugins/noice.lua` | 关闭 LSP 进度提示 |
 | `lua/plugins/catppuccin.lua` | 用 catppuccin 官方 `load()` 而非内置主题名 |
+| `lua/plugins/yazi.lua` | yazi.nvim：`<leader>y`（当前文件目录）/ `<leader>Y`（工作目录），黄色 󰇥 图标 |
 | `lua/plugins/example.lua` | LazyVim 模板，首行 `if true then return {} end`，**不加载任何内容**，可删 |
 
 ## 六、常用快捷键速查
@@ -412,6 +417,7 @@ If you want Chinese descriptions in the which-key menu and elsewhere, use:
 | `<leader>/` | 全项目搜索文本 |
 | `<leader>sg` / `<leader>sw` | grep / 搜当前词 |
 | `<leader>sr` | 项目级搜索替换（grug-far） |
+| `<leader>y` / `<leader>Y` | Yazi（当前文件目录 / 工作目录） |
 | `s` | flash 字符跳转 |
 
 ### Git
