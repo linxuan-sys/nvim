@@ -9,7 +9,7 @@ return {
         Session.backends.opencode = nil -- 去掉 opencode serve 的会话后端，只留本地终端
         require("sidekick.cli").toggle("opencode")
       end,
-      desc = "Sidekick (opencode)",
+      desc = "Opencode",
     },
   },
 }
