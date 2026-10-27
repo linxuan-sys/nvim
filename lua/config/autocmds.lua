@@ -19,3 +19,10 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.formatoptions:remove("o")
   end,
 })
+
+-- fcitx5 状态切换与恢复 (来自 shorin-arch-setup 99-apps.sh 的 LazyVim 配置)
+local fcitx_st = ""
+vim.api.nvim_create_autocmd("InsertLeave", { callback = function() fcitx_st = vim.fn.system("fcitx5-remote"); vim.fn.jobstart("fcitx5-remote -c") end })
+vim.api.nvim_create_autocmd("InsertEnter", { callback = function() if fcitx_st:match("2") then vim.fn.jobstart("fcitx5-remote -o") end end })
+-- 上游用 VimEnter autocmd, 但本文件在 VeryLazy 才加载可能错过该事件, 改为启动时直接切英文
+vim.fn.jobstart("fcitx5-remote -c")
