@@ -25,5 +25,5 @@ vim.api.nvim_create_autocmd("InsertEnter", {
     end
   end,
 })
--- 上游用 VimEnter autocmd, 但本文件在 VeryLazy 才加载可能错过该事件, 改为启动时直接切英文
+-- 启动时直接切英文
 vim.fn.jobstart("fcitx5-remote -c")

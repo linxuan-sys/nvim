@@ -16,11 +16,11 @@ return {
         header = [[
  ██╗     ██╗███╗   ██╗     ██╗  ██╗██╗   ██╗ █████╗ ███╗   ██╗ 
  ██║     ██║████╗  ██║     ╚██╗██╔╝██║   ██║██╔══██╗████╗  ██║ 
- ██║     ██║██╔██╗ ██║      ╚███╔╝ ██║   ██║███████║██╔██╗ ██║ 
+ ██║     █║██╔█╗ ██║      ╚██╔╝ ██║   ██║██████║██╔█╗ ██║ 
  ██║     ██║██║╚██╗██║      ██╔██╗ ██║   ██║██╔══██║██║╚██╗██║ 
- ███████╗██║██║ ╚████║     ██╔╝ ██╗╚██████╔╝██║  ██║██║ ╚████║ 
+ ██████╗██║██║ ╚████║     ██╔╝ ██╗╚█████╔╝██║  ██║██║ ╚████║ 
  ╚══════╝╚═╝╚═╝  ╚═══╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ 
-                                                               
+󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⣠⡹⣒⣃⢃⠞⠀⠀⠀⠀⠀⠀⠀⠀⠤⢸⣿⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⡀⠊⠄⠀⠀⠀⠡
 ⠀⠀⠀⠀⠀⠀⠀⠆⢄⠀⠀⠀⣿⣿⣿⣿⣿⣿⠀⡠⠂⠁⠧⠋⠊⠀⠀⡀⠄⣐⣪⣥⣴⣶⣿⣿⡿⣿⠛⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡯⡾⡢⢀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⣿⣿⣿⣿⣿⣿⠜⠀⠀⠀⠀⡀⢔⣠⣴⣾⠿⠟⠛⢉⡠⠔⣋⠀⠠⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡪⠠⡈⠄⠀⠀⠀
@@ -50,12 +50,12 @@ return {
       sections = {
         {
         --icon = " ",
-        key = "e",
-        --desc = "Explorer",
+        key = "@",
+        desc = " 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸",
         action = ":lua Snacks.explorer({ cwd = LazyVim.root() })",
         },
         { section = "header" },
-        { pane = 2, icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
+        { pane = 2, icon = " ", title = "Shortcut", section = "keys", indent = 2, padding = 1 },
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
         {
@@ -144,15 +144,15 @@ return {
       bold = true,
     })
     vim.api.nvim_set_hl(0, "SnacksDashboardIcon", {
-      fg = "#8EB8F2",
+      fg = "#81b8f2",
       bold = true,
     })
     vim.api.nvim_set_hl(0, "SnacksDashboardDesc", {
-      fg = "#d7c6ff",
+      fg = "#e9edf8",
       bold = true,
     })
     vim.api.nvim_set_hl(0, "SnacksDashboardKey", {
-      fg = "#fe9550",
+      fg = "#f38ba8",
       bold = true,
     })
   end,
