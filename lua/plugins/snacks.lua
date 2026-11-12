@@ -51,7 +51,7 @@ return {
         {
         --icon = " ",
         key = "@",
-        desc = " 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸",
+        desc = "󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸 󰈸",
         action = ":lua Snacks.explorer({ cwd = LazyVim.root() })",
         },
         { section = "header" },
